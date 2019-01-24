@@ -57,6 +57,7 @@ PRODUCT_COPY_FILES += \
      vendor/oneplus/sdm845-common/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
      vendor/oneplus/sdm845-common/proprietary/etc/permissions/qti_libpermissions.xml:system/etc/permissions/qti_libpermissions.xml \
      vendor/oneplus/sdm845-common/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
+     vendor/oneplus/sdm845-common/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
      vendor/oneplus/sdm845-common/proprietary/etc/public.libraries-qti.txt:system/etc/public.libraries-qti.txt \
      vendor/oneplus/sdm845-common/proprietary/etc/qvr/ov7251_640x480_cam_config.xml:system/etc/qvr/ov7251_640x480_cam_config.xml \
      vendor/oneplus/sdm845-common/proprietary/etc/qvr/ov9282_640x400_cam_config.xml:system/etc/qvr/ov9282_640x400_cam_config.xml \
@@ -145,13 +146,25 @@ PRODUCT_COPY_FILES += \
      vendor/oneplus/sdm845-common/proprietary/etc/wfdconfig.xml:system/etc/wfdconfig.xml \
      vendor/oneplus/sdm845-common/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
      vendor/oneplus/sdm845-common/proprietary/framework/audiosphere.jar:system/framework/audiosphere.jar \
+     vendor/oneplus/sdm845-common/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
      vendor/oneplus/sdm845-common/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
      vendor/oneplus/sdm845-common/proprietary/framework/com.quicinc.cne.api-V1.0-java.jar:system/framework/com.quicinc.cne.api-V1.0-java.jar \
+     vendor/oneplus/sdm845-common/proprietary/framework/com.quicinc.cne.api-V1.1-java.jar:system/framework/com.quicinc.cne.api-V1.1-java.jar \
+     vendor/oneplus/sdm845-common/proprietary/framework/com.quicinc.cne.constants-V1.0-java.jar:system/framework/com.quicinc.cne.constants-V1.0-java.jar \
+     vendor/oneplus/sdm845-common/proprietary/framework/com.quicinc.cne.constants-V2.0-java.jar:system/framework/com.quicinc.cne.constants-V2.0-java.jar \
+     vendor/oneplus/sdm845-common/proprietary/framework/com.quicinc.cne.constants-V2.1-java.jar:system/framework/com.quicinc.cne.constants-V2.1-java.jar \
      vendor/oneplus/sdm845-common/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
+     vendor/oneplus/sdm845-common/proprietary/framework/com.quicinc.cne.server-V1.0-java.jar:system/framework/com.quicinc.cne.server-V1.0-java.jar \
+     vendor/oneplus/sdm845-common/proprietary/framework/com.quicinc.cne.server-V2.0-java.jar:system/framework/com.quicinc.cne.server-V2.0-java.jar \
+     vendor/oneplus/sdm845-common/proprietary/framework/com.quicinc.cne.server-V2.1-java.jar:system/framework/com.quicinc.cne.server-V2.1-java.jar \
+     vendor/oneplus/sdm845-common/proprietary/framework/com.quicinc.cne.server-V2.2-java.jar:system/framework/com.quicinc.cne.server-V2.2-java.jar \
      vendor/oneplus/sdm845-common/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
      vendor/oneplus/sdm845-common/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
      vendor/oneplus/sdm845-common/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
      vendor/oneplus/sdm845-common/proprietary/framework/qtiNetworkLib.jar:system/framework/qtiNetworkLib.jar \
+     vendor/oneplus/sdm845-common/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
+     vendor/oneplus/sdm845-common/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
+     vendor/oneplus/sdm845-common/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
      vendor/oneplus/sdm845-common/proprietary/framework/vendor.qti.data.factory-V1.0-java.jar:system/framework/vendor.qti.data.factory-V1.0-java.jar \
      vendor/oneplus/sdm845-common/proprietary/framework/vendor.qti.hardware.alarm-V1.0-java.jar:system/framework/vendor.qti.hardware.alarm-V1.0-java.jar \
      vendor/oneplus/sdm845-common/proprietary/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar:system/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar \
@@ -169,6 +182,7 @@ PRODUCT_COPY_FILES += \
      vendor/oneplus/sdm845-common/proprietary/lib/com.qualcomm.qti.imscmservice@2.1.so:system/lib/com.qualcomm.qti.imscmservice@2.1.so \
      vendor/oneplus/sdm845-common/proprietary/lib/com.qualcomm.qti.uceservice@2.0.so:system/lib/com.qualcomm.qti.uceservice@2.0.so \
      vendor/oneplus/sdm845-common/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+     vendor/oneplus/sdm845-common/proprietary/lib/com.quicinc.cne.server@1.0.so:system/lib/com.quicinc.cne.server@1.0.so \
      vendor/oneplus/sdm845-common/proprietary/lib/ese_spi_nxp.so:system/lib/ese_spi_nxp.so \
      vendor/oneplus/sdm845-common/proprietary/lib/extractors/libmmparser.so:system/lib/extractors/libmmparser.so \
      vendor/oneplus/sdm845-common/proprietary/lib/lib-imsvideocodec.so:system/lib/lib-imsvideocodec.so \
@@ -339,6 +353,7 @@ PRODUCT_COPY_FILES += \
      vendor/oneplus/sdm845-common/proprietary/lib64/com.qualcomm.qti.imscmservice@2.0.so:system/lib64/com.qualcomm.qti.imscmservice@2.0.so \
      vendor/oneplus/sdm845-common/proprietary/lib64/com.qualcomm.qti.imscmservice@2.1.so:system/lib64/com.qualcomm.qti.imscmservice@2.1.so \
      vendor/oneplus/sdm845-common/proprietary/lib64/com.qualcomm.qti.uceservice@2.0.so:system/lib64/com.qualcomm.qti.uceservice@2.0.so \
+     vendor/oneplus/sdm845-common/proprietary/lib64/com.quicinc.cne.server@1.0.so:system/lib64/com.quicinc.cne.server@1.0.so \
      vendor/oneplus/sdm845-common/proprietary/lib64/ese_spi_nxp.so:system/lib64/ese_spi_nxp.so \
      vendor/oneplus/sdm845-common/proprietary/lib64/extractors/libmmparser.so:system/lib64/extractors/libmmparser.so \
      vendor/oneplus/sdm845-common/proprietary/lib64/lib-imsvideocodec.so:system/lib64/lib-imsvideocodec.so \
@@ -493,11 +508,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.latency-V1.0-java \
     vendor.qti.hardware.sensorscalibrate-V1.0-java \
     vendor.qti.ims.rcsconfig-V1.0-java \
-    dashd
-
-ifeq ($(QCPATH),)
-
-PRODUCT_PACKAGES += \
+    dashd \
     AntHalService \
     QtiSystemService \
     QtiTelephonyService \
@@ -515,8 +526,3 @@ PRODUCT_PACKAGES += \
     com.qti.dpmframework \
     qcnvitems \
     qcrilhook
-endif
-
--include vendor/extra/devices.mk
-ifneq ($(call is-qc-perf-target),true)
-endif
