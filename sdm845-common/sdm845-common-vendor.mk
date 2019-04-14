@@ -118,12 +118,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libantradio \
     QtiTelephonyService \
-    ims \
     CNEService \
     WfdService \
     HotwordEnrollmentOKGoogleWCD9340 \
     HotwordEnrollmentXGoogleWCD9340 \
     dpmserviceapp \
+    ims \
     qcrilmsgtunnel \
     WfdCommon \
     dashd
