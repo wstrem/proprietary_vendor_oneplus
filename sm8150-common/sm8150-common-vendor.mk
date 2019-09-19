@@ -1515,4 +1515,5 @@ PRODUCT_PACKAGES += \
     WfdCommon \
     dashd \
     OPSoundTuner \
-    daxService
+    daxService \
+    OnePlusCameraPackage
