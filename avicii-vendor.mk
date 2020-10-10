@@ -19,7 +19,22 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/avicii
 
 PRODUCT_COPY_FILES += \
+    vendor/oneplus/avicii/proprietary/bin/dashd:$(TARGET_COPY_OUT_SYSTEM)/bin/dashd \
     vendor/oneplus/avicii/proprietary/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM)/bin/wfdservice \
+    vendor/oneplus/avicii/proprietary/etc/camera/calibrationOutput_uw.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/calibrationOutput_uw.bin \
+    vendor/oneplus/avicii/proprietary/etc/camera/calibrationOutput_wt.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/calibrationOutput_wt.bin \
+    vendor/oneplus/avicii/proprietary/etc/camera/distortion_result.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/distortion_result.bin \
+    vendor/oneplus/avicii/proprietary/etc/camera/distortion_result_front.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/distortion_result_front.bin \
+    vendor/oneplus/avicii/proprietary/etc/camera/M_Attribute_AG_BMW_1.1.0.model.hardcode:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/M_Attribute_AG_BMW_1.1.0.model.hardcode \
+    vendor/oneplus/avicii/proprietary/etc/camera/ashdr/ncf_pack.ncf:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/ashdr/ncf_pack.ncf \
+    vendor/oneplus/avicii/proprietary/etc/camera/ashdr/ncf_pack_hi846.ncf:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/ashdr/ncf_pack_hi846.ncf \
+    vendor/oneplus/avicii/proprietary/etc/camera/ashdr/ncf_pack_imx471.ncf:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/ashdr/ncf_pack_imx471.ncf \
+    vendor/oneplus/avicii/proprietary/etc/camera/ashdr/ncf_pack_imx481.ncf:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/ashdr/ncf_pack_imx481.ncf \
+    vendor/oneplus/avicii/proprietary/etc/camera/ashdr/ncf_pack_imx586.ncf:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/ashdr/ncf_pack_imx586.ncf \
+    vendor/oneplus/avicii/proprietary/etc/camera/ashdr/ncf_pack_imx616.ncf:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/ashdr/ncf_pack_imx616.ncf \
+    vendor/oneplus/avicii/proprietary/etc/camera/ashdr/ncf_pack_ov8856.ncf:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/ashdr/ncf_pack_ov8856.ncf \
+    vendor/oneplus/avicii/proprietary/etc/camera/darksight/darksight_main.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/darksight/darksight_main.bin \
+    vendor/oneplus/avicii/proprietary/etc/camera/darksight/darksight_ultrawide.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/camera/darksight/darksight_ultrawide.bin \
     vendor/oneplus/avicii/proprietary/etc/cne/Nexus/ATT/ATT_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ATT/ATT_profiles.xml \
     vendor/oneplus/avicii/proprietary/etc/cne/Nexus/ROW/ROW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ROW/ROW_profiles.xml \
     vendor/oneplus/avicii/proprietary/etc/cne/Nexus/VZW/VZW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/VZW/VZW_profiles.xml \
@@ -29,6 +44,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/avicii/proprietary/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/oneplus/avicii/proprietary/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/wfdconfigsink.xml \
     vendor/oneplus/avicii/proprietary/framework/tcmclient.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/tcmclient.jar \
+    vendor/oneplus/avicii/proprietary/framework/vendor.oneplus.hardware.CameraMDMHIDL-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.oneplus.hardware.CameraMDMHIDL-V1.0-java.jar \
+    vendor/oneplus/avicii/proprietary/framework/vendor.oneplus.hardware.camera-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.oneplus.hardware.camera-V1.0-java.jar \
     vendor/oneplus/avicii/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/oneplus/avicii/proprietary/lib/libFileMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libFileMux.so \
     vendor/oneplus/avicii/proprietary/lib/libOmxMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libOmxMux.so \
@@ -105,6 +122,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/avicii/proprietary/product/lib/libdpmtcm.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libdpmtcm.so \
     vendor/oneplus/avicii/proprietary/product/lib/libimscamera_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libimscamera_jni.so \
     vendor/oneplus/avicii/proprietary/product/lib/libimsmedia_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libimsmedia_jni.so \
+    vendor/oneplus/avicii/proprietary/product/lib/libseccam.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libseccam.so \
+    vendor/oneplus/avicii/proprietary/product/lib/libseccam-ipc.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libseccam-ipc.so \
+    vendor/oneplus/avicii/proprietary/product/lib/libseccamservice.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libseccamservice.so \
+    vendor/oneplus/avicii/proprietary/product/lib/vendor.oneplus.hardware.camera@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.oneplus.hardware.camera@1.0.so \
+    vendor/oneplus/avicii/proprietary/product/lib/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so \
     vendor/oneplus/avicii/proprietary/product/lib/vendor.qti.data.factory@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.data.factory@1.0.so \
     vendor/oneplus/avicii/proprietary/product/lib/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.data.factory@2.0.so \
     vendor/oneplus/avicii/proprietary/product/lib/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.data.factory@2.1.so \
@@ -113,6 +135,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/avicii/proprietary/product/lib/vendor.qti.hardware.data.dynamicdds@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.data.dynamicdds@1.0.so \
     vendor/oneplus/avicii/proprietary/product/lib/vendor.qti.hardware.data.iwlan@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.data.iwlan@1.0.so \
     vendor/oneplus/avicii/proprietary/product/lib/vendor.qti.hardware.data.latency@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.data.latency@1.0.so \
+    vendor/oneplus/avicii/proprietary/product/lib/vendor.qti.hardware.seccam@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.seccam@1.0.so \
     vendor/oneplus/avicii/proprietary/product/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
     vendor/oneplus/avicii/proprietary/product/lib/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.ims.callinfo@1.0.so \
     vendor/oneplus/avicii/proprietary/product/lib/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.ims.rcsconfig@1.0.so \
@@ -142,7 +165,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/avicii/proprietary/product/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimscamera_jni.so \
     vendor/oneplus/avicii/proprietary/product/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimsmedia_jni.so \
     vendor/oneplus/avicii/proprietary/product/lib64/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsdm-disp-apis.qti.so \
+    vendor/oneplus/avicii/proprietary/product/lib64/libseccam.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libseccam.so \
+    vendor/oneplus/avicii/proprietary/product/lib64/libseccam-ipc.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libseccam-ipc.so \
+    vendor/oneplus/avicii/proprietary/product/lib64/libseccamservice.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libseccamservice.so \
     vendor/oneplus/avicii/proprietary/product/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.0.so \
+    vendor/oneplus/avicii/proprietary/product/lib64/vendor.oneplus.hardware.camera@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.oneplus.hardware.camera@1.0.so \
+    vendor/oneplus/avicii/proprietary/product/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so \
     vendor/oneplus/avicii/proprietary/product/lib64/vendor.qti.data.factory@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.data.factory@1.0.so \
     vendor/oneplus/avicii/proprietary/product/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/oneplus/avicii/proprietary/product/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.data.factory@2.1.so \
@@ -151,13 +179,13 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/avicii/proprietary/product/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so \
     vendor/oneplus/avicii/proprietary/product/lib64/vendor.qti.hardware.data.iwlan@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.data.iwlan@1.0.so \
     vendor/oneplus/avicii/proprietary/product/lib64/vendor.qti.hardware.data.latency@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.data.latency@1.0.so \
+    vendor/oneplus/avicii/proprietary/product/lib64/vendor.qti.hardware.seccam@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.seccam@1.0.so \
     vendor/oneplus/avicii/proprietary/product/lib64/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.ims.callinfo@1.0.so \
     vendor/oneplus/avicii/proprietary/product/lib64/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.ims.rcsconfig@1.0.so \
     vendor/oneplus/avicii/proprietary/product/lib64/vendor.qti.ims.rcsconfig@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.ims.rcsconfig@1.1.so \
     vendor/oneplus/avicii/proprietary/product/lib64/vendor.qti.imsrtpservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.imsrtpservice@2.0.so \
     vendor/oneplus/avicii/proprietary/product/lib64/vendor.qti.imsrtpservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.imsrtpservice@2.1.so \
     vendor/oneplus/avicii/proprietary/product/lib64/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.latency@2.0.so \
-    vendor/oneplus/avicii/proprietary/bin/dashd:$(TARGET_COPY_OUT_SYSTEM)/bin/dashd
 
 PRODUCT_PACKAGES += \
     libantradio \
@@ -183,6 +211,8 @@ PRODUCT_PACKAGES += \
     embmslibrary \
     qcrilhook \
     qti-telephony-common \
+    vendor.oneplus.hardware.camera@1.0-java \
+    vendor.oneplus.hardware.CameraMDMHIDL@1.0-java \
     vendor.qti.data.factory-V1.0-java \
     vendor.qti.data.factory-V2.0-java \
     vendor.qti.data.factory-V2.1-java \
