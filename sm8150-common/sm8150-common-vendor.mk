@@ -1613,6 +1613,8 @@ PRODUCT_PACKAGES += \
     NxpNfcNci \
     NxpSecureElement \
     SoterService \
+    HotwordEnrollmentOKGoogleWCD9340 \
+    HotwordEnrollmentXGoogleWCD9340 \
     WfdService \
     CneApp \
     IWlanService \
@@ -1622,8 +1624,6 @@ PRODUCT_PACKAGES += \
     pasrservice \
     QtiTelephonyService \
     uceShimService \
-    HotwordEnrollmentOKGoogleWCD9340 \
-    HotwordEnrollmentXGoogleWCD9340 \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
